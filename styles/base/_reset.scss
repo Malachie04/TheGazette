@@ -1,5 +1,6 @@
  @use '../abstracts/_variables' as *;
 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -16,6 +17,7 @@
   @media (prefers-reduced-motion: no-preference) {
     html {
       interpolate-size: allow-keywords;
+      font-family: 'Roboto',sans-serif;
     }
   }
   

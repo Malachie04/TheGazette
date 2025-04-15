@@ -1,0 +1,86 @@
+
+@use '../abstracts/_mixins' as *;
+@use '../abstracts/_variables' as *;
+
+a{
+    text-decoration: none;
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+header{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+// .wrapper{
+//     width: 1200px;
+//     background-color: #000;
+//     @include mobile {
+//         display: none;
+//       }
+// }
+
+.menu {
+    padding: 0 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $link-volor;
+        color: #fff;
+        font-family:'Roboto', serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 5px 20px;
+        vertical-align: center;
+        border-radius: 5px;
+    }
+    img{
+        display: inline-block;
+    }
+}
+
+.menu{
+
+
+    // Desktop (min 960px)
+    @include desktop {
+      display: none;
+    }
+  
+    // Grand écran (min 1200px)
+    @include large-desktop {
+      display: none;
+    }
+}
+
+.nav-bottom{
+    
+    @include mobile {
+        display: none;
+      }
+
+      @include desktop {
+        display: flex;
+      }
+    
+      // Grand écran (min 1200px)
+      @include large-desktop {
+        display: flex;
+      }
+}

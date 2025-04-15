@@ -1,6 +1,19 @@
+// Mobile d'abord
 @mixin mobile {
-    @media (min-width: 650px) { @content; }
+  @media (min-width: 650px) {
+    @content;
   }
-  @mixin desktop {
-    @media (min-width: 960px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 960px) {
+    @content;
   }
+}
+
+// Tu peux aussi en ajouter d'autres si besoin
+@mixin large-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

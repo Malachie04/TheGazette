@@ -1,0 +1,14 @@
+@use '../abstracts/_variables' as *;
+.btn-red{
+    color: #fff;
+    background-color: $link-volor;
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 15px; 
+}
+
+.txtred{
+    color: $link-volor;
+}
