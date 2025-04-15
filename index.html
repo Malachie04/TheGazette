@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>The gazette</title>
 </head>
 <body>
     <header>
         <nav class="main-nav wrapper">
             <div class="nav-top">
-                <img src="./image/core-img/logo.png" alt="image-menu">
+                <a href="#"><img src="./image/core-img/logo.png" alt="image-menu" class="logo-top"></a>
             </div>
             <div class="menu">
                 <div class="menu-content">
@@ -37,32 +38,32 @@
             <div class="image-main">
                 <img src="./image/blog-img/16.jpg" alt="image-nav" class="image-top1">
                 <div class="main-top_bl">
-                    <h2>Live</h2>
+                    <h2 class="btn-red">Live</h2>
                     <h1>The lattest news live</h1>
                     <span class="top-spa">March 19, 2018</span>
                 </div>
             </div>
             <div class="image-main">
-                <img src="./image/blog-img/19.jpg" alt="image-nav" class="image-top2">
+                <img src="./image/blog-img/16.jpg" alt="image-nav" class="image-top1">
                 <div class="main-top_bl">
-                    <h2>Live</h2>
+                    <h2 class="btn-red">Crypto</h2>
                     <h1>The lattest news live</h1>
                     <span class="top-spa">March 19, 2018</span>
                 </div>
             </div>
-            <div class="image-main">
-                <img src="./image/blog-img/7.jpg" alt="image-nav" class="image-top3">
+            <div class="image-main image-main-left">
+                <img src="./image/blog-img/7.jpg" alt="image-nav" class="image-top1">
                 <div class="main-top_bl">
-                    <h2>Live</h2>
+                    <h2 class="btn-red">Live</h2>
                     <h1>The lattest news live</h1>
                     <span class="top-spa">March 19, 2018</span>
                 </div>
             </div>
         </div>
-        <div class="main-middle">
-            <div class="main-content--left">
-                <article>
-                    <h2>Politices</h2>
+        <div class="main-middle wrapper">
+            <div class="main-content_left">
+                <article class="big-art">
+                    <h2 class="btn-red">Politices</h2>
                     <h1>What's behind the world obsession with gems?</h1>
                     <h3>March 29, 2016</h3>
                     <img src="./image/blog-img/1.jpg" alt="image-nav">
@@ -71,80 +72,90 @@
                         Quasi odit adipisci aperiam odio eveniet inventore, eos tempore sint ipsa molestias tenetur facilis, aspernatur nesciunt esse est, incidunt recusandae ab laborum vel? Accusantium, unde voluptas. Quaerat porro esse eos!
                     </div>
                     <div class="article-content-bottom">
-                        <div class="main-bottom-link">
-                            <a href="#">Continue reading</a>
+                        <div class="art-content">
+                            <div class="main-bottom-link">
+                                <a href="#" class="reading">Continue reading</a>
+                            </div>
+                            <div class="main-bottom-social">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
                         </div>
-                        <div class="main-bottom-social">
-                            li
+                        <div class="socal-ok">
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
                         </div>
                     </div>
                 </article>
-            </div>
-            <div class="main-content--right">
-                <h2>Breacking news</h2>
-                <div class="big-card">
-                    <div class="news-card-title">
-                        <div class="card-content">
-                            Breaking news
-                        </div>
-                        <img src="./image/blog-img/22.jpg" alt="image-card">
-                        <div class="card-bottom">
-                            China leads new global skyscraper record
-                        </div>
-                    </div>
-                </div>
-                <div class="big-card">
-                    <div class="news-card-title">
-                        <div class="card-content">
-                            Breaking news
-                        </div>
-                        <img src="./image/blog-img/bn-2.jpg" alt="image-card">
-                        <div class="card-bottom">
-                            Can a zebra crossing change its stripes?
+                <article class="main-right">
+                    <h2>Breacking news</h2>
+                    <div class="big-card">
+                        <div class="news-card-title">
+                            <div class="card-content">
+                                <h1>Breaking news</h1>
+                            </div>
+                            <img src="./image/blog-img/22.jpg" alt="image-card">
+                            <div class="card-bottom">
+                                <p>China leads new global skyscraper record</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h2>Don't miss</h2>
-                <div class="small-card">
-                    <img src="./image/blog-img/dm-1.jpg" alt="image-card">
-                    <div class="small-crad-right">  
-                        <a href="#">EU council reunites</a>
-                        <span>Nov 29, 2017</span>
+                    <div class="big-card">
+                        <div class="news-card-title">
+                            <div class="card-content">
+                                <h1>Breaking news</h1>
+                            </div>
+                            <img src="./image/blog-img/bn-2.jpg" alt="image-card">
+                            <div class="card-bottom">
+                                <p>Can a zebra crossing change its stripes?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="small-card">
-                    <img src="./image/blog-img/dm-2.jpg" alt="image-card">
-                    <div class="small-crad-right">  
-                        <a href="#">EU council reunites</a>
-                        <span>Nov 29, 2017</span>
+                    <h2>Don't miss</h2>
+                    <div class="small-card">
+                        <img src="./image/blog-img/dm-1.jpg" alt="image-card">
+                        <div class="small-crad-right">  
+                            <a href="#">EU council reunites</a>
+                            <span>Nov 29, 2017</span>
+                        </div>
                     </div>
-                </div>
-                <div class="small-card">
-                    <img src="./image/blog-img/dm-3.jpg" alt="image-card">
-                    <div class="small-crad-right">  
-                        <a href="#">EU council reunites</a>
-                        <span>Nov 29, 2017</span>
+                    <div class="small-card">
+                        <img src="./image/blog-img/dm-2.jpg" alt="image-card">
+                        <div class="small-crad-right">  
+                            <a href="#">EU council reunites</a>
+                            <span>Nov 29, 2017</span>
+                        </div>
                     </div>
-                </div>
-                <div class="form">
-                    <h2>Subscribe</h2>
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Email">
-                        <button type="button">Subscribe</button>
-                    </form>
-                </div>
+                    <div class="small-card">
+                        <img src="./image/blog-img/dm-3.jpg" alt="image-card">
+                        <div class="small-crad-right">  
+                            <a href="#">EU council reunites</a>
+                            <span>Nov 29, 2017</span>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h2>Subscribe</h2>
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Email">
+                            <button type="button">Subscribe</button>
+                        </form>
+                    </div>
+                </article>
             </div>
         </div>
-        <div class="todays">
-            <h2>today’s most popular</h2>
+        <div class="todays wrapper">
+            <div class="todays-title">
+                <h2>today’s most popular</h2>
+            </div>
             <div class="card-group">
                 <div class="average-card">
                     <img src="./image/blog-img/2.jpg" alt="image-card">
                     <div class="overage-card-content">
-                        <h2>news</h2>
+                        <h2 class="txtred">news</h2>
                         <h1>$250-million mansion is most expensive</h1>
                         <span>March 29, 2016</span>
-                        <span>3 Comments</span>
+                        <span class="comment">3 Comments</span>
                         <div class="content-overage-card">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reprehenderit explicabo sed, tempora sint fugit optio blanditiis quo obcaecati molestias fuga id pariatur, aut ducimus quod voluptas sit ex. Quis?
                         </div>
@@ -153,10 +164,10 @@
                 <div class="average-card">
                     <img src="./image/blog-img/3.jpg" alt="image-card">
                     <div class="overage-card-content">
-                        <h2>news</h2>
+                        <h2 class="txtred">news</h2>
                         <h1>$250-million mansion is most expensive</h1>
                         <span>March 29, 2016</span>
-                        <span>3 Comments</span>
+                        <span class="comment">3 Comments</span>
                         <div class="content-overage-card">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reprehenderit explicabo sed, tempora sint fugit optio blanditiis quo obcaecati molestias fuga id pariatur, aut ducimus quod voluptas sit ex. Quis?
                         </div>
