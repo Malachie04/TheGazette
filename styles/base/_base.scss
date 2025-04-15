@@ -57,30 +57,27 @@ header{
 
 .menu{
 
+    display: none;
 
-    // Desktop (min 960px)
-    @include desktop {
-      display: none;
+    
+    @include mobile {
+      display: flex;
     }
   
-    // Grand écran (min 1200px)
+    
     @include large-desktop {
       display: none;
     }
 }
 
 .nav-bottom{
-    
-    @include mobile {
-        display: none;
-      }
+    display: none; 
 
-      @include desktop {
-        display: flex;
-      }
-    
-      // Grand écran (min 1200px)
-      @include large-desktop {
-        display: flex;
-      }
+    @include desktop {
+      display: flex;
+    }
+  
+    @include large-desktop {
+      display: flex;
+    }
 }
