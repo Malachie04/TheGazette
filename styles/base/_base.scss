@@ -17,18 +17,6 @@ header{
     padding-top: 30px;
 }
 
-.big{
-    grid-template-columns: span 12;
-}
-.small{
-    grid-template-columns: span 6;
-}
-
-.tiny{
-    grid-template-columns: span 3;
-}
-
-
 .main-nav{
     display: flex;
     flex-direction: column;
@@ -79,7 +67,7 @@ header{
     }
   
     @include desktop {
-      width: 1200px;
+      width: 1280px;
       margin: auto;
     }
   }
@@ -201,6 +189,16 @@ header{
             width: 100%;
             object-fit: cover;
         }
+        .main-top_bl{
+            padding: 20px 30px;
+            h1,span{
+                font-size: 250%;
+            }
+            h2{
+                font-size: 100%;
+            }
+        }
+
         .image-main-left{
             display: block;
         }
@@ -285,6 +283,40 @@ header{
   
     
     @include desktop {
+
+        .main-content_left{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            gap: 1rem;
+            .big-art{
+                grid-column: span 9;
+                h2,h3{
+                    font-size: 100%;
+                }
+                h1{
+                    font-size: 350%;
+                    line-height: 60px;
+                    font-family: 'Roboto';
+                }
+                .article-content-middle{
+                    font-size: 150%;
+                    line-height: 50px;
+                }
+            }
+            .main-right{
+                grid-column: span 3;
+                h2{
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #c6bdbd;
+                    padding-bottom: 15px;
+                }
+                .big-card{
+                    p{
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
       .image-main-left{
           display: block;
       }
@@ -380,12 +412,24 @@ header{
   
     
     @include desktop {
-
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 2rem;
+        .todays-title{
+            grid-column: span 9;
+        }
+        .card-group{
+            grid-column: span 9;
+        }
     }
 }
 .card-group img{
     height: 500px;
 
+    @include desktop{
+        height: 400px;
+        margin: 1rem 0;
+    }
 }
 
 .overage-card-content{
@@ -418,8 +462,16 @@ header{
         font-style: normal;
         margin: 12px 0;
     }
+    @include desktop {
+        
+    }
 }
-
+.average-card{
+    @include desktop {
+        display: flex;
+        gap: 2rem;
+    }
+}
 .dont-miss{
     color: #656060;
     text-transform: uppercase;
@@ -472,6 +524,14 @@ header{
         border: 0;
     }
 }
+.bottom-left,.bottom-right {
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 .main-bottom{
     display: flex;
@@ -491,6 +551,28 @@ header{
     .main-bottom-content:not(:last-child){
         border-bottom: 1px solid #b5abab;
         padding: 10px 0;
+    }
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap:1rem;
+
+        .bottom-left{
+            grid-column: span 4;
+        }
+        .bottom-middle{
+            grid-column: span 2;
+        }
+        .probleme{
+            grid-column: span 2;
+        }
+        .bottom-right{
+            grid-column: span 4;
+        }
+        .btm-m{
+            grid-column: span 12;
+        }
+
     }
 
 }
