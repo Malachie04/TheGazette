@@ -559,6 +559,9 @@ header{
 
         .bottom-left{
             grid-column: span 4;
+            .btm-video{
+                align-self: flex-start;
+            }
         }
         .bottom-middle{
             grid-column: span 2;
@@ -568,6 +571,9 @@ header{
         }
         .bottom-right{
             grid-column: span 4;
+            .object-live{
+                align-self: flex-start;
+            }
         }
         .btm-m{
             grid-column: span 12;
@@ -680,13 +686,9 @@ footer{
     padding: 10px;
     background-color: $link-volor;
     color: #fff;
-    opacity: 1;
     transition: opacity 0.3s ease;
     right: 15%;
+    z-index: 4;
 
-    :target ~ .floating-arrow {
-        opacity: 0;
-        pointer-events: none;
-      }
 
 }
